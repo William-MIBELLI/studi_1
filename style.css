@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+.container{
+    padding-top: 5%;
+    background-color: black;
+    min-height: 100vh;
+}
+body{
+    background-color: silver;
+}
+h1{
+    font-family:'Lobster', 'Montserrat', sans-serif;
+    color: grey;
+    font-size: 3rem;
+}
+.affiche{
+    background-image: url(./marquee_Carbon_MTB_MQ_2019.webp);
+    background-size:100%;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+@media  screen and (max-width: 1000px) {
+    .affiche{
+        background-size:contain;
+    }
+}
+#col-bouton{
+    display: flex;
+    justify-content: center;
+}
