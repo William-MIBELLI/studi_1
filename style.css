@@ -1,19 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
 .container{
-    padding-top: 5%;
     background-color: black;
     min-height: 100vh;
+    position: relative;
 }
 body{
     background-color: silver;
+    height : 2000px;
 }
 h1{
     font-family:'Lobster', 'Montserrat', sans-serif;
     color: grey;
     font-size: 3rem;
+    justify-self: flex-start;
+}
+.icon{
+    width: 20px;
+    fill: red;
 }
 .affiche{
-    background-image: url(./marquee_Carbon_MTB_MQ_2019.webp);
+    background-image: url(./Ressource/marquee_Carbon_MTB_MQ_2019.webp);
     background-size:100%;
     background-repeat: no-repeat;
     min-height: 60vh;
@@ -21,12 +27,94 @@ h1{
     align-items: center;
     justify-content: center;
 }
-@media  screen and (max-width: 1000px) {
+/* @media  screen and (max-width: 1000px) {
     .affiche{
         background-size:contain;
     }
-}
+} */
 #col-bouton{
     display: flex;
     justify-content: center;
 }
+.btn{
+    margin-bottom: 100px;
+    background: red;
+    border-radius: 5px;
+    min-width: 90px;
+    font-weight: bold;
+    
+}
+.menu{
+    box-shadow: inset 0px -1px 0px #c5c5c6;
+}
+.navbar-link-side,
+.navbar-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    padding-left: 5%;
+    display: inline-block;
+    position: relative;
+    
+}
+.side{
+    margin-top: 15px;
+}
+.navbar-link::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    width: 60%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: white;
+    transition: transform 0.3s ease-out;
+}
+.navbar-link:hover::after{
+    transform: scaleX(1)
+}
+
+.navbar-link:hover{
+    color:grey
+}
+.hamburger{
+    display:none;
+}
+header{
+    position: sticky;
+    display: flexbox;
+    top: 0px;
+    background-color: black;
+    max-height: 80px;
+}
+
+@media screen and (max-width:990px){
+    .navbar{
+        position: relative;
+    }
+    .hide{
+        display:none;
+    }
+    .hamburger{
+        display: flex;
+    }
+    h1{
+       margin: auto;
+    }
+    
+}
+
+.side-menu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-start;
+    background-color: green;
+    top: 100%;
+    left:0;
+    height: 100vh;
+    width: 15%;
+}
+

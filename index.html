@@ -14,14 +14,32 @@
 </head>
 <body>
     <div class="container">
-        <div class="row">
-            <h1>Les riders du dimanche</h1>
-        </div>
+        <header class="row">
+            <div class="col-12 menu">
+               <nav class="navbar">
+                <h1>Les riders du dimanche</h1>
+                    <a href="#" class="navbar-link hide">L'équipe</a>
+                    <a href="#" class="navbar-link hide">Les kids</a>
+                    <a href="#" class="navbar-link hide">Les spots</a>
+                    <a href="#" class="navbar-link hide">Les Events</a>
+                <button class="hamburger" type="button" aria-expanded="false">
+                    <img src="./Ressource/burger_icon.svg" class="icon btn-menu"alt="">
+                </button>
+                <div class="side-menu">
+                    <a href="#" class="navbar-link side">L'équipe</a>
+                    <a href="#" class="navbar-link side">Les kids</a>
+                    <a href="#" class="navbar-link side">Les spots</a>
+                    <a href="#" class="navbar-link side">Les Events</a>
+                </div>
+               </nav>   
+            </div>
+        </header>
         <div class="row affiche">
             <div class="col-12" id="col-bouton">
-                <button class="btn btn-secondary">Go !</button>
+                <button class="btn ">GO !!</button>
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
